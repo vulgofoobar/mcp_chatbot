@@ -35,7 +35,7 @@ def edit_doc(
   doc_id: str = Field(description="Id of the document what will be edited"),
   old_str: str = Field(description="The text to replace. Must match exactly, including whitespace."),
   new_str: str = Field(description="The new text to insert in place of the old text.")
-)
+):
   if doc_id not in docs:
     raise ValueError(f"Doc with id {doc_id} not found")
 

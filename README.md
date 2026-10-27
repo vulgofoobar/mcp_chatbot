@@ -95,6 +95,20 @@ Commands will auto-complete when you press Tab.
 
 ## Development
 
+### MCP Development Inspector
+
+Test and debug the MCP server using the browser-based inspector:
+
+```bash
+mcp dev mcp_server.py
+```
+
+This launches an interactive development server. Open your browser to `http://127.0.0.1:6274/` to:
+- Quickly iterate on tool implementations
+- Test edge cases and error conditions
+- Verify tool interactions and state management
+- Debug issues in real-time
+
 ### Adding New Documents
 
 Edit the `mcp_server.py` file to add new documents to the `docs` dictionary.
